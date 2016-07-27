@@ -1,0 +1,36 @@
+<!DOCTYPE>
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8">	
+		<link type="text/css" rel="stylesheet" href="normalize.css" />
+		<link type="text/css" rel="stylesheet" href="skeleton.css"/>
+		<link type="text/css" rel="stylesheet" href="styles.css"/>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js" type="text/javascript"></script>
+
+		<script src="app.js"></script>
+		<script src="controller.js"></script>
+		<title>Everything Elephant</title>
+	</head>
+
+	<body>
+		<header class="container">
+			<h1>Everything Elephant</h1>
+			<nav>
+				<ul>
+					<li>Home</li>
+					<li>About</li>
+					<li>Faves</li>
+					<li>Careers in Elephantry</li>
+				</ul>
+			</nav>
+		</header>
+		<div class="container" ng-app="postApp" ng-controller="feedCtrl">	
+			<post ng-repeat="post in posts"></post>
+		</div>
+		<footer class="container">&#169; 2016, Karen Langner
+		</footer>
+	</body>
+
+</html>
